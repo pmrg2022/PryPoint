@@ -70,7 +70,7 @@ body {
 /* Menu Button */
 
 .menu-button {
-    background: #d62828;
+    background: #E30000;
     color: white;
 
     border: none;
@@ -85,7 +85,7 @@ body {
 }
 
 .menu-button:hover {
-    background: #b82020;
+    background: #9C0000;
 }
 
 
@@ -149,7 +149,7 @@ main {
 .get-button {
     display: inline-block;
 
-    background: #d62828;
+    background: #D60000;
     color: white;
 
     text-decoration: none;
@@ -163,7 +163,7 @@ main {
 }
 
 .get-button:hover {
-    background: #b82020;
+    background: #840000;
 }
 
 
@@ -257,7 +257,7 @@ footer {
 }
 
 .menu-content a:hover {
-    color: #d62828;
+    color: #d60000;
 }
 
 .close-button {
@@ -311,4 +311,399 @@ footer {
         gap: 18px;
     }
 
+}
+
+/* -------------------------
+ Listings Page
+ ------------------------- */
+
+.listings-main {
+    width: 100%;
+    max-width: 1000px;
+    
+    margin: 0 auto;
+    
+    padding: 80px 24px 100px;
+}
+
+
+/* Page Heading */
+
+.page-heading {
+    text-align: center;
+    
+    margin-bottom: 65px;
+}
+
+.page-heading h1 {
+    margin: 0 0 18px;
+    
+    font-size: clamp(42px, 7vw, 70px);
+}
+
+.page-heading p {
+    margin: 0;
+    
+    color: #bdbdbd;
+    
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* Sections */
+
+.listing-section,
+.info-section {
+    margin-bottom: 70px;
+}
+
+.info-section h2 {
+    margin: 0 0 24px;
+    
+    font-size: 30px;
+}
+
+
+/* Listing Card */
+
+.listing-card {
+    background: #181818;
+    
+    border: 1px solid #333;
+    
+    border-radius: 12px;
+    
+    padding: 32px;
+}
+
+.listing-card h2 {
+    margin: 0 0 10px;
+    
+    font-size: 28px;
+}
+
+.listing-card p {
+    color: #bdbdbd;
+    
+    line-height: 1.6;
+}
+
+.listing-card .version {
+    color: white;
+}
+
+
+/* Download Buttons */
+
+.listing-buttons {
+    display: flex;
+    
+    flex-wrap: wrap;
+    
+    gap: 12px;
+    
+    margin-top: 28px;
+}
+
+.download-button {
+    display: inline-block;
+    
+    background: #d60000;
+    
+    color: white;
+    
+    text-decoration: none;
+    
+    border-radius: 8px;
+    
+    padding: 13px 22px;
+    
+    font-weight: 700;
+}
+
+.download-button:hover {
+    background: #b80000;
+}
+
+
+/* Installation */
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 12px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    
+    gap: 18px;
+    
+    background: #181818;
+    
+    border: 1px solid #333;
+    
+    border-radius: 10px;
+    
+    padding: 20px;
+}
+
+.step span {
+    flex-shrink: 0;
+    
+    width: 38px;
+    height: 38px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background: #d62828;
+    
+    border-radius: 50%;
+    
+    font-weight: 700;
+}
+
+.step p {
+    margin: 0;
+    
+    color: #d0d0d0;
+    
+    line-height: 1.5;
+}
+
+
+/* Tested Devices */
+
+.device-card {
+    display: flex;
+    align-items: center;
+    
+    gap: 18px;
+    
+    background: #181818;
+    
+    border: 1px solid #333;
+    
+    border-radius: 10px;
+    
+    padding: 24px;
+}
+
+.device-status {
+    width: 42px;
+    height: 42px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background: #8F0000;
+    
+    border-radius: 50%;
+    
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.device-card h3 {
+    margin: 0 0 5px;
+    
+    font-size: 21px;
+}
+
+.device-card p {
+    margin: 0;
+    
+    color: #aaa;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    
+    .listings-main {
+        padding: 55px 18px 70px;
+    }
+    
+    .page-heading {
+        margin-bottom: 45px;
+    }
+    
+    .listing-card {
+        padding: 24px;
+    }
+    
+    .info-section {
+        margin-bottom: 55px;
+    }
+    
+    .step {
+        align-items: flex-start;
+    }
+    
+}
+
+/* -------------------------
+ Updates Page
+ ------------------------- */
+
+.updates-main,
+.about-main {
+    width: 100%;
+    max-width: 950px;
+    
+    margin: 0 auto;
+    
+    padding: 80px 24px 100px;
+}
+
+
+/* Update Card */
+
+.update-card {
+    background: #181818;
+    
+    border: 1px solid #333;
+    
+    border-radius: 12px;
+    
+    padding: 32px;
+    
+    margin-bottom: 28px;
+}
+
+.update-header {
+    display: flex;
+    
+    align-items: flex-start;
+    justify-content: space-between;
+    
+    gap: 20px;
+    
+    padding-bottom: 24px;
+    
+    border-bottom: 1px solid #333;
+}
+
+.update-label {
+    margin: 0 0 7px;
+    
+    color: #d60000;
+    
+    font-size: 13px;
+    font-weight: 700;
+    
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.update-header h2 {
+    margin: 0;
+    
+    font-size: 28px;
+}
+
+.update-date {
+    color: #888;
+    
+    font-size: 14px;
+    
+    white-space: nowrap;
+}
+
+
+/* Update Content */
+
+.update-content {
+    padding-top: 24px;
+    
+    color: #c8c8c8;
+    
+    line-height: 1.7;
+}
+
+.update-content h3 {
+    margin-top: 28px;
+    
+    color: white;
+    
+    font-size: 19px;
+}
+
+.update-content ul {
+    padding-left: 22px;
+}
+
+.update-content li {
+    margin-bottom: 8px;
+}
+
+
+/* -------------------------
+ About Page
+ ------------------------- */
+
+.about-section {
+    background: #181818;
+    
+    border: 1px solid #333;
+    
+    border-radius: 12px;
+    
+    padding: 32px;
+    
+    margin-bottom: 24px;
+}
+
+.about-section h2 {
+    margin: 0 0 18px;
+    
+    font-size: 27px;
+}
+
+.about-section p {
+    margin: 0 0 16px;
+    
+    color: #c8c8c8;
+    
+    font-size: 17px;
+    
+    line-height: 1.7;
+}
+
+.about-section p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* -------------------------
+ Updates + About Mobile
+ ------------------------- */
+
+@media (max-width: 600px) {
+    
+    .updates-main,
+    .about-main {
+        padding: 55px 18px 70px;
+    }
+    
+    .update-card,
+    .about-section {
+        padding: 24px;
+    }
+    
+    .update-header {
+        flex-direction: column;
+    }
+    
+    .update-date {
+        white-space: normal;
+    }
+    
 }
