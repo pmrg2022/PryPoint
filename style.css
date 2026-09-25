@@ -1,0 +1,314 @@
+/* -------------------------
+   General
+------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    background: #202020;
+    color: white;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+
+/* -------------------------
+   Top Bar
+------------------------- */
+
+.topbar {
+    height: 76px;
+
+    background: #181818;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 32px;
+
+    border-bottom: 1px solid #333;
+}
+
+
+/* Logo + Name */
+
+.brand {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.brand img {
+    width: 44px;
+    height: 44px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+
+/* Menu Button */
+
+.menu-button {
+    background: #d62828;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 11px 18px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    background: #b82020;
+}
+
+
+/* -------------------------
+   Main
+------------------------- */
+
+main {
+    min-height: calc(100vh - 76px - 150px);
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 24px;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 850px;
+
+    text-align: center;
+}
+
+
+/* Heading */
+
+.hero h1 {
+    margin: 0 0 28px;
+
+    font-size: clamp(48px, 8vw, 88px);
+    line-height: 1;
+
+    font-weight: 800;
+}
+
+
+/* Summary */
+
+.summary {
+    max-width: 700px;
+
+    margin: 0 auto 40px;
+
+    color: #d0d0d0;
+
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+
+/* Get Button */
+
+.get-button {
+    display: inline-block;
+
+    background: #d62828;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 15px 42px;
+
+    border-radius: 9px;
+
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.get-button:hover {
+    background: #b82020;
+}
+
+
+/* -------------------------
+   Footer
+------------------------- */
+
+footer {
+    background: #181818;
+
+    border-top: 1px solid #333;
+
+    padding: 35px 24px;
+
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 26px;
+
+    margin-bottom: 22px;
+}
+
+.footer-links a {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 15px;
+}
+
+.footer-links a:hover {
+    color: #d62828;
+}
+
+.copyright {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* -------------------------
+   Menu Panel
+------------------------- */
+
+.menu-panel {
+    position: fixed;
+
+    inset: 0;
+
+    background: #181818;
+
+    display: none;
+
+    z-index: 100;
+}
+
+.menu-panel.open {
+    display: block;
+}
+
+.menu-content {
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 24px;
+
+    position: relative;
+}
+
+.menu-content a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.menu-content a:hover {
+    color: #d62828;
+}
+
+.close-button {
+    position: absolute;
+
+    top: 25px;
+    right: 32px;
+
+    background: transparent;
+
+    border: none;
+
+    color: white;
+
+    font-size: 40px;
+
+    cursor: pointer;
+}
+
+
+/* -------------------------
+   Mobile
+------------------------- */
+
+@media (max-width: 600px) {
+
+    .topbar {
+        padding: 0 18px;
+    }
+
+    .brand {
+        font-size: 20px;
+    }
+
+    .brand img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .hero {
+        min-height: 550px;
+
+        padding: 60px 20px;
+    }
+
+    .summary {
+        font-size: 17px;
+    }
+
+    .footer-links {
+        gap: 18px;
+    }
+
+}
