@@ -772,6 +772,6 @@ footer {
     height: auto;
     max-height: 400px;
     object-fit: contain;
-    border-radius: 8px;
+    border-radius: 16px;
     background: #101010;
 }
